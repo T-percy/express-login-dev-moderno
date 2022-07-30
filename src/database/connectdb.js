@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const USER = encodeURIComponent(process.env.DB_USER)
 const PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
-const CLUSTER = process.env.DB_CLUSTER0;
+const CLUSTER = process.env.DB_CLUSTER;
 const NAME_DB = process.env.DB_NAME;
 
 const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${CLUSTER}/${NAME_DB}` // prettier-ignore
